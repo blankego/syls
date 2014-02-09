@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<name>miepie</name>
+	<version>0.1.1</version>
+	<requirements>
+		<minimum_version>3.0.0</minimum_version>
+	</requirements>
+	<thumbnail>thumbnail.png</thumbnail>
+	<description>
+		<![CDATA[
+		    MiePie is the default theme for miesoft's CMS.
+		]]>
+	</description>
+	<authors>
+		<author>
+			<name>Thatch Acre</name>
+			<url>http://blankego.github.com</url>
+		</author>
+	</authors>
+	<metanavigation supported="false" />
+	<templates>
+		<template label="Default" path="core/layout/templates/default.tpl">
+			<positions>
+				<position name="main" />
+				<position name="left">
+                    <defaults>
+                        <widget module="tags" action="tagcloud" />
+                    </defaults>
+				</position>
+				<position name="top"/>
+				<position name="advertisement" />
+			</positions>
+			<format>
+				[/,advertisement,advertisement,advertisement],[/,/,top,top],[/,/,/,/],[left,main,main,main]
+			</format>
+		</template>
+		<template label="Home" path="core/layout/templates/home.tpl">
+			<positions>
+				<position name="main" />
+				<position name="left" />
+				<position name="right" />
+				<position name="top"/>
+				<position name="advertisement" />
+			</positions>
+			<format>
+				[/,advertisement,advertisement,advertisement],[top,top,top,top],[/,/,/,/],[main,main,main,main],[left,left,right,right]
+			</format>
+		</template>
+        <template label="Ribbon" path="core/layout/templates/ribbon.tpl">
+            <positions>
+                <position name="main" />
+            </positions>
+            <format>
+                [/,/,/,/],[/,/,/,/],[/,/,/,/],[main,main,main,main],[/,/,/,/]
+            </format>
+        </template>
+        <template label="Test" path="core/layout/templates/test.tpl">
+            <positions>
+                <position name="main" />
+            </positions>
+            <format>
+                [/,/,/,/],[/,/,/,/],[/,/,/,/],[main,main,main,main],[/,/,/,/]
+            </format>
+        </template>
+	</templates>
+</theme>
