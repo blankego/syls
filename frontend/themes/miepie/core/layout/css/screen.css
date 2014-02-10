@@ -1049,7 +1049,7 @@ div.bshare-custom{
 header.hd{
     clear:both;
     float: right;
-    width:700px;
+    /*width:700px;*/
     padding: 25px 0 15px 0;
 }
 header.hd img{
@@ -1120,4 +1120,12 @@ header.hd img{
 }
 #searchIndex #search p{
     margin-bottom: 10px;
+}
+
+/** blog**/
+#blogIndex header.hd, #blogDetail header.hd{
+    float:none;
+}
+#blogIndex header.hd h3{
+    position: static;
 }
