@@ -7,13 +7,13 @@
 .col-3 { width: 220px; }
 .col-4 { width: 300px; }
 .col-5 { width: 380px; }
-.col-6 { width: 460px; }
+.col-6 { width: 469px; }
 .col-7 { width: 540px; }
 .col-8 { width: 620px; }
 .col-9 { width: 700px; }
 .col-10 { width: 780px; }
 .col-11 { width: 860px; }
-.col-12 { width: 940px; }
+.col-12 { width: 959px; }
 .lastCol { padding-right: 0; }
 .colOverflow { overflow: hidden; }
 
@@ -316,7 +316,7 @@ h2{ font-size:12px;}
 /*-TOP LOGO and END-*/
 
 /*-top_menu Start -*/
-.nav {  Z-INDEX:999;
+.nav {  Z-INDEX:9999;
     position: relative;
     margin-bottom: 8px;
 }
@@ -789,7 +789,7 @@ nav li{
 
 }
 .flex-direction-nav{
-    z-index: 9999;
+    z-index: 999;
     position: absolute;
     top:140px;
     width:100%;
@@ -866,6 +866,10 @@ nav li{
     border: 1px solid #808080;
     border-radius: 5px;
     padding: 0;
+    z-index: 2222;
+}
+.ribbon,.ribbon *{
+    z-index: 9999;
 }
 .ribbon a:hover, .ribbon a:visited, .ribbon a{
     color:#003F2E;
@@ -939,11 +943,11 @@ nav li{
 
     background: rgb(0, 0, 0) transparent;
     /* RGBa with 0.6 opacity */
-    background: rgba(0, 0, 100, 0.1);
+    background: rgba(0, 0, 100, 0.05);
     /* For IE 5.5 - 7*/
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#100000FF, endColorstr=#100000FF);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#050000FF, endColorstr=#050000FF);
     /* For IE 8*/
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#10000000, endColorstr=#10000000)";
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#05000000, endColorstr=#05000000)";
 }
 #headerNavigation .selected a{
     color: rgb(129,129,129);
@@ -954,7 +958,10 @@ nav li{
     text-align: center;
     margin: 20px 10px 15px 10px;
 }
-
+header.hd img{
+    border-radius: 6px;
+    width:100%;
+}
 /**--- main col side col --*/
 .mainCol{
     background-color: white;
@@ -982,6 +989,10 @@ div.bshare-custom{
 }
 .sideNavigation>ul, .mainCol, #tagCloud{
     box-shadow:1px 1px 5px rgba(0,0,0,0.1)
+}
+.two_on , .two_on caption, .one_on{
+    box-shadow:1px 2px 7px rgba(0,0,0,0.2);
+    border-radius: 0 10px 0 10px;
 }
 
 
@@ -1014,6 +1025,49 @@ header.hd{
     padding: 25px 0 15px 0;
 }
 header.hd img{
-    width: 100px;
+    width: 100%;
 
+}
+
+/* homepage columns */
+.two_on table td{
+    vertical-align: top;
+
+}
+.two_on td img{
+    width:87px;
+    height:98px;
+}
+.two_on td:first-child{
+    width: 100px;
+    text-align: center;
+}
+.two_on {
+    background-color: #eff4ed;
+    padding : 5px;
+}
+
+.two_on caption{
+    font:normal  20px/25px "微软雅黑",sans-serif;
+    background-color: #0a4838;
+    color: #fcfcfc;
+
+    margin: 5px 8px 5px 8px;
+    padding: 3px 20px 5px 10px;
+    text-align: left;
+}
+.two_on li{
+    margin: 5px 18px;
+    line-height: 16px;
+    list-style-type: square;
+    color: #0a4838;
+
+}
+.home .mod .inner{
+    padding:3px;
+}
+.one_on{
+    margin: 15px 0;
+    padding:8px;
+    border-radius: 10px;
 }
