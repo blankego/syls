@@ -1,3 +1,27 @@
+/* Links */
+
+a {
+    text-decoration: none;
+
+    color: #0f6f56;
+}
+
+a:link {
+
+    color: #0a4837;
+}
+
+a:visited {
+
+    color: #054232;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: #c9050f;
+}
+
 /*
 	Column system
 */
@@ -313,6 +337,10 @@ h2{ font-size:12px;}
 .header .search{ float:right; padding-top:40px; width:178px}
 .header .search input{ border:0; background-color:transparent; width:140px; height:15px; background:url(../images/searchinput_bg.jpg) no-repeat; padding:4px 8px; float:left;}
 .header .search .ab{ border:0; width:21px; height:23px; display:inline-block; background:url(../images/search_btn.jpg) no-repeat;float:left;}
+#search .inputSubmit{
+    text-indent: -9999px;
+    white-space: nowrap;
+}
 /*-TOP LOGO and END-*/
 
 /*-top_menu Start -*/
@@ -1070,4 +1098,26 @@ header.hd img{
     margin: 15px 0;
     padding:8px;
     border-radius: 10px;
+}
+
+/* search results*/
+#searchResults header.hd h3{
+    position: static;
+}
+#searchResults header.hd{
+    float: none;
+}
+#searchIndex #search .errorArea{
+    clear:both;
+    margin-bottom: 15px;
+}
+#searchIndex header.hd{
+    float: none;
+}
+#searchIndex #search .inputSubmit{
+    text-indent: 0px;
+    white-space: nowrap;
+}
+#searchIndex #search p{
+    margin-bottom: 10px;
 }

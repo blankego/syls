@@ -29,14 +29,14 @@
 
                         <h4>搜索</h4>
 
-                        <form accept-charset="UTF-8" action="/zh/搜索" method="get" id="search"
+                        <form accept-charset="UTF-8" action="/zh/{$lblSearch|ucfirst}" method="get" id="search"
                               class="forkForms submitWithLink">
-
+                            <input type="hidden" value="search" id="formSearch" name="form" />
                             <div class="oneLiner">
                                 <input value="" id="qWidget" name="q_widget" maxlength="255" type="text"
                                        class="inputText autoSuggest"/></p>
                                 <input id="submit" class="ab inputSubmit" type="submit"
-                                       name="submit" value=""/></p>
+                                       name="submit" value="{$lblSearch|ucfirst}"/></p>
                             </div>
                         </form>
 
