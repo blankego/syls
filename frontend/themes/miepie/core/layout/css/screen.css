@@ -1129,3 +1129,54 @@ header.hd img{
 #blogIndex header.hd h3{
     position: static;
 }
+
+/* real table */
+table.table,table.table td{
+    text-align: left;
+    border-collapse: collapse;
+    vertical-align: top;
+}
+td {
+    vertical-align: top;
+
+}
+table.contactUs{
+    border:1px dotted #808080;
+}
+ .contactUs td{
+     padding: 7px;
+    border-bottom: 1px dotted #808080;
+    border-right: 1px dotted #808080;;
+
+}
+/*form*/
+form{
+    padding: 12px;
+    border-radius: 8px;
+    border:1px solid lightblue;
+}
+label, .label {
+    display: block;
+    padding-bottom: 2px;
+    height: 18px;
+    overflow: hidden;
+}
+input.inputText, input.inputPassword, input.inputSearch, input.inputDate, textarea {
+    color: #666;
+    border-color: #999 #BBB #BBB;
+    border-style: solid;
+    border-width: 1px;
+    padding: 3px 4px;
+    margin: 0px;
+    background-color: #FFF;
+    background-image: -moz-linear-gradient(0% 3px 90deg, #FFF, #CECECE);
+    border-radius: 3px;
+}
+input, select, textarea {
+    font-size: 100%;
+    vertical-align: middle;
+}
+textarea{
+    width: 420px;
+
+}
