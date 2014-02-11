@@ -31,7 +31,7 @@ a:focus {
 .col-3 { width: 220px; }
 .col-4 { width: 300px; }
 .col-5 { width: 380px; }
-.col-6 { width: 469px; }
+.col-6 { width: 468px; }
 .col-7 { width: 540px; }
 .col-8 { width: 620px; }
 .col-9 { width: 700px; }
@@ -54,12 +54,12 @@ a:focus {
     text-indent: -9999px;
 }
 
-.sideNavigation>ul {
+.sideNavigation>ul,#blogCategoriesWidget,#blogRecentArticlesListWidget,#blogArchiveWidget {
     border-radius: 0 12px 0 12px;
     padding:0;
     border: 1px solid #d8d8d8;
     overflow: hidden;
-
+    margin-bottom: 10px;
 }
 
 .sideNavigation li {
@@ -1015,15 +1015,20 @@ div.bshare-custom{
 .sideCol{
     margin-top: 8px;
 }
-.sideNavigation>ul, .mainCol, #tagCloud{
+.sideNavigation>ul, .mainCol, #tagCloud, #blogCategoriesWidget,#blogRecentArticlesListWidget,#blogArchiveWidget{
     box-shadow:1px 1px 5px rgba(0,0,0,0.1)
 }
+
 .two_on , .two_on caption, .one_on{
     box-shadow:1px 2px 7px rgba(0,0,0,0.2);
     border-radius: 0 10px 0 10px;
 }
-
-
+.col-6.lastCol{
+    width:471px;
+}
+.lastCol>.two_on{
+    margin-right: 4px;
+}
 /**---BaiduBridge---*/
 .bdbridge-icon-right,.bridgehead{
     visibility: hidden;
@@ -1129,6 +1134,28 @@ header.hd img{
 #blogIndex header.hd h3{
     position: static;
 }
+#blogCategoriesWidget li,#blogRecentArticlesListWidget li,#blogArchiveWidget li{
+    list-style: none;
+    margin:0;
+}
+#blogCategoriesWidget h3,#blogRecentArticlesListWidget h3,#blogArchiveWidget h3{
+    position: static;
+    left: 0;
+    top:0;
+}
+#blogCategoriesWidget .hd,#blogRecentArticlesListWidget .hd,#blogArchiveWidget .hd{
+    float:none;
+    padding:0 5px 3px;
+}
+#blogRecentArticlesListWidget .ft{
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 8px;
+    border:1px dotted lightgrey;
+}
+#blogCategoriesWidget,#blogRecentArticlesListWidget,#blogArchiveWidget{
+    background-color: #eff4ed;
+}
 
 /* real table */
 table.table,table.table td{
@@ -1139,6 +1166,9 @@ table.table,table.table td{
 td {
     vertical-align: top;
 
+}
+th{
+    text-align: left;
 }
 table.contactUs{
     border:1px dotted #808080;
@@ -1154,6 +1184,10 @@ form{
     padding: 12px;
     border-radius: 8px;
     border:1px solid lightblue;
+}
+.search form{
+    padding:0;
+    border: none;
 }
 label, .label {
     display: block;
