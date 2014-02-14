@@ -45,14 +45,11 @@
     <script>
         (function () {
             function checkGoTop() {
-                if (window.pageYOffset == 0){$('#goTop').fadeOut('slow');}
-                else
-                {$('#goTop').fadeIn('slow');}
+                $('#goTop')[window.pageYOffset == 0? 'fadeOut': 'fadeIn']('slow');
             }
 
             $("#goTop").click(function () {
                 $('html, body').animate({scrollTop:0}, 'slow', checkGoTop);
-
                 return false;
             });
 
@@ -61,9 +58,7 @@
             } else {
                 document.addEventListener('DOMMouseScroll', checkGoTop);
             }
-            window.onscroll = function () {
-                console.log('scroll');
-            };
+            window.onscroll = checkGoTop;
             checkGoTop();
         })()
     </script>
