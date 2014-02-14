@@ -361,9 +361,20 @@ h2{ font-size:12px;}
 /*-top_menu END-*/
 
 /*-foot Start-*/
-.foot{background:url(../images/footbg.jpg) repeat-x 0 0; color:#7D8B8E; padding-bottom:47px;}
+.foot{
+    background:url(../images/footbg.jpg) repeat-x 0 0; color:#7D8B8E;
+    position: relative;
+    height:90px;
+}
 .footer{ padding:22px 0 0 10px;  margin:0 auto; width:949px;}
 .footer a{ text-decoration:none; color:#7D8B8E;}
+#statistic {
+    text-align: center;
+
+    bottom: 0;
+    margin:0 auto;
+    width: 949px;
+}
 /*-foot END-*/
 
 .yourposition{ overflow:hidden; zoom:1; padding-bottom:10px;}
@@ -960,10 +971,10 @@ nav li{
 
 
 .logoText{
-    position: relative;
+    position: absolute;
     font: 20px "微软雅黑";
-    float:right;
-    top:12px;
+    left: 166px;
+    top:38px;
 }
 #headerNavigation .selected {
     /* Fallback for web browsers that doesn't support RGBa */
