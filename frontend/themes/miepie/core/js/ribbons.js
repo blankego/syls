@@ -2,6 +2,9 @@ function prepRibbons() {
     var nav = $('#headerNavigation')
         , con = $('.nav')
         ;
+    function hideRibbon(r){
+        $(r).hide().removeClass('hover');
+    }
 
     nav.find('a:not(:first)').filter(':not(:last)').each(function (idx) {
 
@@ -11,7 +14,7 @@ function prepRibbons() {
                 .hide()
                 .appendTo(con)
                 .hover(function () { $(this).addClass('hover'); })
-                .mouseleave(function () { $(this).hide().removeClass('hover'); })
+                .mouseleave(function () { hideRibbon(this) })
                 .append(
                     $('<div class="ribbonBtn">CLOSE</div>').click(function () { ribbon.hide() })
                 )
@@ -19,15 +22,15 @@ function prepRibbons() {
         a.parent('li').hover(function () {
 
             con.find('.ribbonBox')
-                .each(function (rIdx) { if (rIdx !== idx) { $(this).hide() } });
+                .each(function (rIdx) { if (rIdx !== idx) { hideRibbon(this) } });
 
-            ribbon.show({duration: 200});
+            if(ribbon.is(':hidden')){ ribbon.show({duration: 200})}
 
             if (ribbon.hasClass('empty') && !ribbon.hasClass('loading')) {
                 ribbon.addClass('loading');
                 var loc = window.location
 //                    ,url = loc.protocol + '//' + loc.host + '/zh/ribbons/' + $.trim(a.text())
-                    url =encodeURI( '/zh/ribbons/' + $.trim(a.text()))
+                    ,url =encodeURI( '/zh/ribbons/' + $.trim(a.text()))
                     ;
 
                 $.ajax(url, {dataType: 'html', type: 'get',cache:false})
@@ -37,7 +40,9 @@ function prepRibbons() {
             }
         })
             .mouseleave(function () {
-                setTimeout(function () { if (!ribbon.hasClass('hover')) { ribbon.hide() } }, 100)
+                setTimeout(function () {
+                    if (!ribbon.hasClass('hover')) { hideRibbon(ribbon) }
+                }, 50)
             });
 
     });
