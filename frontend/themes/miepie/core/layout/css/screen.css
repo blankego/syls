@@ -1286,7 +1286,7 @@ textarea{
 
 #qr{
     position: absolute;
-    background-image: url(../images/qrcode.jpg);
+    background-image: url(../images/service_qrcode.jpg);
     bottom: 35px;
     right: 65px;
     width: 258px;
