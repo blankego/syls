@@ -1,7 +1,15 @@
+{option:isMobile}
+{include:core/layout/templates/head_mobile.tpl}
+
+<body class="{$LANGUAGE}" itemscope itemtype="http://schema.org/WebPage">
+{include:core/layout/templates/top_mobile.tpl}
+{/option:isMobile}
+{option:!isMobile}
 {include:core/layout/templates/head.tpl}
 
 <body class="{$LANGUAGE}" itemscope itemtype="http://schema.org/WebPage">
 {include:core/layout/templates/top.tpl}
+{/option:!isMobile}
 		<div id="main">
 			<div class="container">
 
@@ -74,7 +82,7 @@
 		</noscript>
 
 
-
+{option:!isMobile}
 {include:core/layout/templates/bottom.tpl}
 
 {option:widgetTagsTagCloud}
@@ -96,6 +104,9 @@
         });
     </script>
 {/option:widgetTagsTagCloud}
-
+{/option:!isMobile}
+{option:isMobile}
+{include:core/layout/templates/bottom_mobile.tpl}
+{/option:isMobile}
 </body>
 </html>

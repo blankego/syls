@@ -1,0 +1,226 @@
+body {
+    padding: 0;
+    margin: 0;
+    min-width: 320px;
+
+}
+
+div.bodybg {
+    margin: 0;
+    padding: 0;
+}
+.home div#main{
+    margin-top: 45px;
+}
+
+
+ .home #breadcrumb, #headerLanguage {
+    display: none;
+}
+nav h4, .search h4, .home h1{
+    margin:0;
+    padding:0;
+    position: absolute;
+    left: -9999px;
+}
+/*-TOP LOGO and Search -*/
+.header {
+    overflow: hidden;
+    zoom: 1;
+
+}
+
+.header .logo {
+    float: left;
+    padding-top:7px;
+    bottom: 7px;
+    max-width: 70%;
+
+
+}
+.logo a{
+    padding:0;
+    vertical-align: top;
+}
+.logo img{
+    height: 30px;
+}
+#searchBtn{
+    position: absolute;
+    right: 44px;
+    top:7px;
+}
+
+.header .search {
+    width: 100%;
+    overflow:hidden;
+    position: fixed;
+    top:45px;
+    height: 0;
+    z-index: 400;
+    transition: height 0.3s;
+}
+.header .search.expanded{
+    height: 44px;
+}
+
+.header .search input {
+    border: 1px solid #0000ff;
+
+    vertical-align: top;
+    height: 25px;
+    /*background: url(../images/searchinput_bg.jpg) no-repeat;*/
+    padding: 4px;
+
+    margin:0;
+}
+
+
+
+.header .search .ab {
+
+    /*width: 21px;*/
+    height: 35px;
+    min-width: 40px;
+    margin:0;
+    padding:0;
+    /*background: url(../images/search_btn.jpg) no-repeat;*/
+
+}
+
+/*#search .inputSubmit {*/
+    /*text-indent: -9999px;*/
+    /*white-space: nowrap;*/
+/*}*/
+
+.logoText {
+
+    font: 20px "微软雅黑";
+
+    top: 17px;
+}
+
+/*-TOP LOGO and END-*/
+
+.header {
+    width: 100%;
+    height: 44px;
+    background: none repeat scroll 0 0 #F8F8F8;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #3585DA;
+}
+#menuSwitch{
+    width: 30px;
+    position: fixed;
+    right: 7px;
+    top:7px;
+    z-index: 400;
+
+
+}
+#menuSwitch img{
+    z-index: 401;
+    width: 30px;
+}
+
+/* main menu */
+#mainNav{
+    width: 0;
+    position: fixed;
+    right: 0;
+    top:0;
+    z-index:300;
+    bottom: 40px;
+    overflow: hidden;
+
+
+    background-color: #000000;
+    color: #ffffff;
+    transition: width 0.35s;
+}
+
+#mainNav #headerNavigation{
+    margin:0;
+}
+#mainNav.expanded{
+
+    width: 50%;
+}
+#mainNav ul{
+    padding:0;
+    margin:0;
+}
+#mainNav li{
+    list-style: none;
+    font:22px;
+    margin: 0;
+    padding: 16px;
+    border: 1px solid lightgrey;
+}
+
+#mainNav li a{
+    color: #ffffff;
+}
+#mainNav li a:visited{
+    color: #ffffff;
+}
+a{
+    text-decoration: none;
+}
+.basic-holder{
+    margin-top: 45px;
+}
+
+/* home page columns*/
+.two_on caption{
+    background-color: lightslategray;
+    color: #ffffff;
+    font-size: 26px;
+    height: 32px;
+}
+.two_on td:first-child{
+    width: 33%;
+}
+.two_on td:last-child{
+    width: 67%;
+}
+
+/* plus button */
+
+#plus ,#nav2{
+    position: fixed;
+    left:10px;
+    bottom: 10px;
+    z-index: 599;
+    transition: transform 1s;
+}
+#plus.expanded{
+    transform: rotate(720deg);
+}
+#nav2{
+    left: 31px;
+    bottom: 33px;
+    transform:scale(0.1,0.01);
+    transform-origin:0% 100%;
+    width: 120px;
+    height: 240px;
+    position: fixed;
+    z-index: 566;
+    overflow: hidden;
+    background-color: #ddeecc;
+    padding:6px;
+    border-radius: 8px;
+
+}
+#nav2 a{
+    color: #000000;
+}
+#nav2 a:visited{
+    color: black
+;
+}
+#nav2.expanded{
+    transform: scale(1,1);
+}
