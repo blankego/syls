@@ -2,7 +2,7 @@
 </div>
 
 <div id="bottomWrapper" class="foot">
-    <img onclick="$('#plus,#nav2').toggleClass('expanded')" id="plus" src="{$THEME_URL}/core/layout/images/plus.png"/>
+    <img id="plus" onclick="$('#plus,#nav2').toggleClass('expanded')"  src="{$THEME_URL}/core/layout/images/plus.png"/>
 
     <div id="nav2">
         <div id="goHome">
@@ -10,6 +10,9 @@
         </div>
         <div id="call">
             <a href="tel:+862422511365/"><img src="{$THEME_URL}/core/layout/images/mob_phone.png"/><span>联系电话</span></a>
+        </div>
+        <div id="wechat">
+            <a href="weixin://profile/miesoft_service"><img src="{$THEME_URL}/core/layout/images/mob_wechat.png"/><span>关注微信</span></a>
         </div>
         <div id="mail">
             <a href="mailto:miesoft@126.com"><img src="{$THEME_URL}/core/layout/images/mob_mail.png"/><span>电子邮件</span></a></div>
@@ -80,3 +83,11 @@
 </div>
 
 *}
+<script type="text/javascript">
+    $('#tagCloudWidget').click(function(){
+        $(this).toggleClass('expanded');
+    });
+    $('div#main h1').click(function(){
+        $('.sideNavigation').toggleClass('expanded');
+    })
+</script>

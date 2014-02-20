@@ -46,7 +46,7 @@
 					{* Page title *}
 					{option:!hideContentTitle}
 						<header class="mainTitle">
-							<h1>{$page.title}</h1>
+                            <h1>{$page.title}</h1>
 						</header>
 					{/option:!hideContentTitle}
 
@@ -104,6 +104,7 @@
         });
     </script>
 {/option:widgetTagsTagCloud}
+
 {/option:!isMobile}
 {option:isMobile}
 {include:core/layout/templates/bottom_mobile.tpl}
