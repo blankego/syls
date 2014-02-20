@@ -136,9 +136,11 @@ nav h4, .search h4, .home h1{
     right: 0;
     top:0;
     z-index:300;
-    bottom: 40px;
+    bottom: 1px;
     overflow: hidden;
 
+    border-left: 1px  solid lightgrey;
+    border-bottom: 1px solid lightgrey;
 
     background-color: #000000;
     color: #ffffff;
@@ -165,8 +167,8 @@ nav h4, .search h4, .home h1{
     font:22px;
     margin: 0;
     padding: 16px;
-    border: 1px solid lightgrey;
-    border-bottom:none;
+    border-top: 1px solid lightgrey;
+
 }
 
 #mainNav li a{
@@ -220,6 +222,7 @@ a{
     -webkit-transform:rotate(720deg);
     -o-transform:rotate(720deg);
 }
+
 #nav2{
     left: 30px;
     bottom: 30px;
@@ -319,18 +322,21 @@ a{
     line-height: 2em;
     color: #ffffff;
     border-radius: 5px;
-    padding:2px 4px;
+    padding:0 7px;
     margin:3px;
 }
 #tagCloudWidget ul{
     padding:0;
     margin:0;
 }
-#tagCloudWidget a{
+#tagCloudWidget a, .sideNavigation a {
     text-decoration: none;
     color: #ffffff;
+    width: 100%;
+    padding: 3px 7px;
+    display: block;
 }
-#tagCloudWidget a:visited{
+#tagCloudWidget a:visited, .sideNavigation a:visited{
     color: #ffffff;
 }
 
@@ -377,15 +383,24 @@ a{
     margin:0;
     width: 100%;
     border-top: 1px solid #ffffff;
-    padding:3px 7px ;
 }
-.sideNavigation a{
-    color: #000000;
+
+
+
+
+.sideNavigation>ul>li>ul>li>a{
+    padding-left: 14px;
 }
-.sideNavigation a:visited{
-    color: #000000;
+
+.sideNavigation>ul>li>ul>li>ul>li>a{
+    padding-left: 21px;
 }
+
+
 
 .mainCol .mod{
     padding: 2px 7px 15px 7px;
+}
+li.selected>a{
+    color: lightgreen;
 }

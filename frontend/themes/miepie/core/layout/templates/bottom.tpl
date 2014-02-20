@@ -37,7 +37,7 @@
     <div id="leaveMessage" class="fBtn" title="咨询" onclick="$('#BDBridgeWrap').toggle()"></div>
     <div id="social">
         <div id="weChat" class="fBtn" title="微信" onclick="$('#qr').toggle()"></div>
-        <div id="weibo" class="fBtn" title="新浪微博"></div>
+        <div id="weibo" class="fBtn" title="新浪微博"><a href="http://www.weibo.com/miesoft"></a></div>
         <div id="rssBtn" class="fBtn" title="RSS"><a href="/zh/blog/rss"></a></div>
         <div id="qr"></div>
     </div>

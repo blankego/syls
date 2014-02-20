@@ -1299,6 +1299,11 @@ textarea{
     top:0;
     left: 35px;
 }
+#weibo a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
 #rssBtn{
     background-position: -60px 0;
     top:0;
