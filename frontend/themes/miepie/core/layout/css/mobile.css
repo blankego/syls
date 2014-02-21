@@ -100,7 +100,7 @@ nav h4, .search h4, .home h1{
 .logoText {
 
     font: 20px "微软雅黑";
-
+    display: inline-block;
     top: 17px;
 }
 
@@ -142,7 +142,8 @@ nav h4, .search h4, .home h1{
     border-left: 1px  solid lightgrey;
     border-bottom: 1px solid lightgrey;
 
-    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.80);
+
     color: #ffffff;
     transition: width 0.35s;
     -ms-transition: width 0.35s;
@@ -208,19 +209,19 @@ a{
     left:10px;
     bottom: 10px;
     z-index: 599;
-    transition: transform 1s;
-    -ms-transition: transform 1s;
-    -webkit-transition: transform 1s;
-    -o-transition: transform 1s;
-    -moz-transition: transform 1s;
+    transition: transform 1s ease-in-out;
+    -ms-transition: -ms-transform 1s ease-in-out;
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    -o-transition: -o-transform 1s ease-in-out;
+    -moz-transition: -moz-transform 1s ease-in-out;
 
 }
 #plus.expanded{
-    transform: rotate(720deg);
-    -ms-transform:rotate(720deg);
-    -moz-transform:rotate(720deg);
-    -webkit-transform:rotate(720deg);
-    -o-transform:rotate(720deg);
+    transform: rotate(405deg);
+    -ms-transform:rotate(405deg);
+    -moz-transform:rotate(405deg);
+    -webkit-transform:rotate(405deg);
+    -o-transform:rotate(405deg);
 }
 
 #nav2{
@@ -260,6 +261,13 @@ a{
     -webkit-transform:scale(1,1);
     -o-transform:scale(1,1);
 }
+#nav2 span{
+    padding: 2px 4px 0 6px;
+    vertical-align: 7px;
+}
+#nav2 div{
+
+}
 
 #main .container{
     padding:5px;
@@ -290,8 +298,11 @@ a{
     z-index: 33;
     margin: auto auto;
     overflow: hidden;
-    transition: height 0.5s, width 0.5s;
-
+    transition: height 0.5s  ease-in-out, width 0.5s  ease-in-out;
+    -ms-transition: height 0.5s  ease-in-out, width 0.5s  ease-in-out;
+    -moz-transition: height 0.5s  ease-in-out, width 0.5s  ease-in-out;
+    -webkit-transition: height 0.5s  ease-in-out, width 0.5s  ease-in-out;
+    -o=transition: height 0.5s  ease-in-out, width 0.5s  ease-in-out;
 
 }
 #tagCloudWidget .content{
@@ -369,7 +380,11 @@ a{
     margin:auto auto;
     height: 0;
     overflow: hidden;
-    transition: height 0.3s;
+    transition: height 0.3s ease-in-out;
+    -ms-transition: height 0.3s ease-in-out;
+    -moz-transition: height 0.3s ease-in-out;
+    -webkit-transition: height 0.3s ease-in-out;
+    -o-transition: height 0.3s ease-in-out;
 }
 .sideNavigation.expanded{
     height: auto;

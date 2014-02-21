@@ -7,20 +7,25 @@ input{
     border: 1px solid green;
 }
     div{
+        background-color: greenyellow;
         position: absolute;
         left: 100px;
         top:100px;
 
     }
-    #x{
-        transform:scale(0.2,0.2);
+    div span{
+        background-color: #808080;
+        padding:0;
+        font-size: 12px;
+        vertical-align: 10px;
+
     }
 </style>
 </head>
 <body>
 
 <div>
-    <input type="text" /><input id="x" type="submit" value="sub"/>
+    <img src="../frontend/themes/miepie/core/layout/images/mob_home.png"/><span>span</span>
 </div>
 </body>
 </html>
